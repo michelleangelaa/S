@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunbic</title>
+    <link href="../css/apply.css" rel="stylesheet"/>
+    <link rel="icon"  id="fav" type="svg" href="../assets/index/sunbic-fav.svg" sizes="16x16">
+
+
+    <body class="HomePage">
+   <!-- HEADER STARTS HERE -->
+   <header>
+    <nav>
+      <div class="desktop-nav">
+        <div class="logo_wrapper">
+          <a href="../html/HomePage.html">
+            <img src="../assets/index/LOGO2.svg" id="sunbic-logo" alt="Sunbic Logo" />
+          </a>
+        </div>
+        <!-- <div class="space3"></div> -->
+        <!-- <div class="space2"></div> -->
+        <div class="space"></div>
+        <!-- <div class="space2"></div> -->
+          <ul>
+            <li>
+              <a id="nav-home" href="../html/HomePage.html">Home</a>
+            </li>
+            <li>
+              <a id="nav-program" href="../html/Programs.html">Programs</a>
+            </li>
+            <li>
+              <a href="../html/Apply.html" id="apply">Apply</a>
+            </li>
+          </ul>
+          <div class="space2"></div>
+          <div class="space2"></div>
+          <div class="search">
+            <input id="search-nav"
+            class="search-menu"
+            type="text"
+            name=""
+            id="#search-menu"
+            placeholder="Search"/>  
+          </div>
+        </div>
+    </nav>
+  </header>
+  <!-- HEADER ENDS HERE -->
+  <!-- desktop naviagtion menu end -->
+    
+    <!-- side bar -->
+    <div class="main">
+        <aside>
+          <div class="aside-logo">
+            <a href="HomePage.html">
+              <img id="side-logo" src="../assets/index/LOGO2.svg" alt="">
+            </a>
+          </div>
+          <div class="aside-opt">
+            <a href="Apply.html#line" class="opt">Personal Information</a>
+          </div>
+          <div class="aside-opt">
+            <a href="Apply.html#contact" class="opt">Contact Information</a>
+          </div>
+          <div class="aside-opt">
+            <a href="Apply.html#address" class="opt">Address</a>
+          </div>
+          <div class="aside-opt">
+            <a href="Apply.html#last-edu" class="opt">Latest Education</a>
+          </div>
+          <div class="aside-opt">
+            <a href="Apply.html#enroll" class="opt">Enrollment</a>
+          </div>
+          
+        </aside>
+        <section class="form" id="nav">
+            <section class="form-header">
+                <h1>University Admission</h1><br>
+                <p>Please fill in the form carefully</p><br>
+                <div class="line" id="line" ><hr></div>
+                <form action ="#" method ="">
+                    <section class="form_section_personal">
+                        <label for="name" id="name">Name</label><br>
+                        <div class="name">
+                            <div class="name-first">        
+                                <input type="text" id="name-f" name = "name" required placeholder=""><br>
+                                <div class="warning">First name</div>
+                            </div>  
+                            <div class="name-middle">        
+                                <input type="text" id="name-m" name = "name" placeholder=""><br>
+                                <div class="warning">Middle Initial</div>
+                            </div>  
+                            <div class="name-last">        
+                                <input type="text" id="name-l" name = "name" placeholder=""><br>
+                                <div class="warning">Last name</div>
+                            </div>  
+                            <div class="space-v"></div>
+                        </div>
+                        
+                        <label for="birth-date">Birth date</label><br>
+                        <div class="birth-date">
+                            <div class="day">   
+                                <input type="number" id="day" name = "day" required placeholder="dd" min = "1" max = "31"><br>
+                                <div class="warning">Day</div>  
+                            </div>
+                            <div class="month">   
+                                <input type="number" id="month" name = "month" required placeholder="mm" min = "1"  max = "12"><br>
+                                <div class="warning">Month</div>  
+                            </div>
+                            <div class="year">   
+                                <input type="number" id="year" name = "year"  required placeholder="yyyy" min = "1800" ><br>
+                                <div class="warning" >Year</div>  
+                            </div>
+                            <div class="space-v"></div>
+                        </div>   
+                        <label for="gender">Gender</label><br>
+                        <div class="gender">
+                            <input type="radio" name="gender" value="male" required> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <div class="space-vm"></div>
+                          </div>
+                          
+                          <label for="Nationality">Nationality</label><br>   
+                          <div class="nationality">
+                            <div class="nation">
+                              <input type="text" id="nationality" name = "nationality" required placeholder="" ><br>
+                              <div class="warning" >Nationality</div>  
+                              <div class="space-vm"></div>
+                          </div>
+                          <div class="country">
+                            <input type="text" id="country" name = "country"  required placeholder="" ><br>
+                            <div class="warning" >Place of Birth</div>  
+                          </div>
+                            <div class="space-v"></div>
+                        </div>
+                        <label for="phone" id ="contact">Phone number</label><br>
+                        <div class="phone">
+                          <input type="text" id="phone" name = "phonenumber" required placeholder=""><br>
+                        </div>
+                        <div class="space-vm"></div>             
+                        <label for="email">Email address</label><br>
+                        <div class="email">
+                          <input type="email" id="email" name = "email"  required placeholder=""><br>
+                          <div class="warning" hidden>Enter a valid email addresss</div>  
+                          <div class="space-vm"></div>
+                        </div>
+                        <label for="mailaddress" id="address">Mailing Address</label><br>
+                        <div class="home-address">
+                          <textarea name="home-add" id="home-add" cols="85" rows="4" required></textarea>
+                          <div class="warning" hidden>Enter a valid email addresss</div>  
+                          <div class="space-vm"></div>
+                        <div class="add-details">
+                            <div class="name-first">        
+                              <input type="text" id="name-f" name = "name" placeholder="" required><br>
+                              <div class="warning">City</div>
+                            </div>  
+                            <div class="name-middle">        
+                                <input type="text" id="name-m" name = "name" placeholder="" required><br>
+                                <div class="warning">State/Province</div>
+                            </div>  
+                            <div class="name-last">        
+                                <input type="text" id="name-l" name = "name" placeholder="" required><br>
+                                <div class="warning">Postal/Zip Code</div>
+                            </div>  
+                            <div class="space-v"></div>
+                          </div>
+                          <div class="space-vm"></div>
+
+                        </div>
+                        <div class="last-edu">
+                          <div class="latest-edu" id="last-edu">
+                            <label for="preferences">Latest Education</label><br>
+                            <select name="preferences" id="preferences" required>
+                              <option value="default" id = "def" disabled selected hidden>Please select</option>
+                              <option value="option1">High School</option>
+                              <option value="option2">Vocational School</option>
+                              <option value="option3">Associate's Degree</option>
+                              <option value="option4">Bachelor's Degree</option>
+                              <option value="option5">Master's Degree</option>
+                            </select><br> 
+                          </div>   
+                          <div class="year2">   
+                            <label for="preferences">Year Graduated</label><br>
+                            <input type="number" id="year2" name = "year" placeholder="yyyy" min = "1800" required><br>
+                            <div class="space-vm"></div>
+                          </div> 
+                        </div>
+                        <div class="space-v"></div>
+                      </section>
+
+                      <section class="form-section-apply" required>
+                        <div class="program" id="enroll">
+                          <label for="program">Program</label><br>
+                          <div class="program">
+                              <input type="radio" name="program" value="associate" required>Associate Degree<br>
+                              <input type="radio" name="program" value="barchelor">Barchelor's Degree<br>
+                              <input type="radio" name="program" value="master">Master's Degree<br>
+                              <input type="radio" name="program" value="dual">Dual degree<br>
+                              <div class="space-vm"></div>
+                          </div>
+                          <div class="major">
+                            <label for="major">Major choice</label><br>
+                            <input type="text" list="major_list" name="major" id="major" autocomplete="on" required>
+                            <datalist id="major_list">
+                              <option value="Graphic Design"></option>
+                              <option value="Education"></option>
+                              <option value="Communications"></option>
+                              <option value="Business"></option>
+                              <option value="Computer Science"></option>
+                              <option value="Psychology"></option>
+                            </div>
+                            <div class="space-vm"></div>
+                          
+                      
+
+
+                        <div class="special">
+                          <input type="checkbox" name="check" class="check_box" required>
+                          <label for="check_box">I have filled in my data correctly </label> <br>
+                        </div>
+                        <div class="space-vm"></div>
+                        <div class="button">
+                          <button type="submit">Submit</button>
+                          <!-- <button type="button" form="form" id="submit">Submit</button> -->
+                        </div>
+            </section>
+        </section>
+    </div>
+    <div class="space-v"></div>
+        <!-- FLOATING BUTTON -->
+        <div class="floating-btn">
+          <a href="../html/Apply.html#nav">
+              <div id="float">
+                <img src="../assets/logo/up-white.svg" alt="">
+              </div>
+            </a>
+        </div>
+        <!-- END OF FLOATING BUTTON -->
+    
+        <!-- FOOTER STARTS HERE -->
+        <footer>
+          <div class="footer-up">
+            <div class="up-left">
+              <div class="logo">
+                <img src="../assets/index/LOGO2.svg" alt="">
+              </div>
+              <div class="phone">
+                <p>+62 8973 2781</p>
+              </div>
+              <div class="email">
+                <p>support@sunbic.com</p>
+              </div>
+            </div>
+            <div class="up-mid">
+              <h1 id="program-footer">Programs</h1>
+              <div class="majors">
+                <div class="major1">
+                  <a href="../html/Programs.html#GD" target="_blank">
+                    <p class="footer-hover">Graphic Design</p>
+                  </a>
+                  <a href="../html/Programs.html#sv-ed" target="_blank">
+                    <p class="footer-hover">Education</p>
+                  </a>
+                  <a href="../html/Programs.html#sv-cm" target="_blank">
+                    <p class="footer-hover">Communications</p>
+                  </a>
+                </div>
+                <div class="major2">
+                  <a href="../html/Programs.html#sv-bs" target="_blank">
+                    <p class="footer-hover">Business</p>
+                  </a>
+                  <a href="../html/Programs.html#sv-cs" target="_blank">
+                    <p class="footer-hover">Computer Science</p>
+                  </a>
+                  <a href="../html/Programs.html#sv-ps" target="_blank">
+                    <p class="footer-hover">Psychology</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="up-right">
+              <div class="button-apply">
+                <a href="../html/Apply.html" target="_blank">  
+                  <button id="btn-aply">Apply now
+                    <img id="icon-pop" src="../assets/logo/akar-icons_link-out.svg" alt="" class="pop">
+                  </button>
+                </a>
+              </div>
+              <div class="subs">
+                <label id="label-subs" for="subscribe">Subscribe</label>
+                <p>Be the first one to know our latest news</p>
+                <div class="subs-email">
+                  <input type="email" name="subscribe" id="subscribe" placeholder="Email">
+                  <div class="mini-btn">
+                    <a href="HomePage.html">
+                      <button id="subs">Subscribe</button>
+                    </a>
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <hr id="line-footer">
+          <div class="footer-down">
+            <div class="medsos">
+              <a href="https://www.linkedin.com/school/universitas-bina-nusantara/" class="sm" id="linkedin" target="_blank">
+                <img class="socmed" id="ln" src="../assets/logo/ic Linkedin.svg" alt="">
+              </a>
+              <a href="https://www.facebook.com/universitasbinanusantara/" class="sm" id="facebook" target="_blank">
+                <img class="socmed" id="fb" src="../assets/logo/ic Facebook.svg" alt="">
+              </a>
+              <a href="https://twitter.com/binus_univ?lang=en" class="sm" id="twitter" target="_blank">
+                <img class="socmed" id="twt" src="../assets/logo/ic Twitter.svg" alt="">
+              </a>
+              <a href="https://www.instagram.com/binusuniversityofficial/" class="sm" id="instagram" target="_blank">
+                <img class="socmed" id="ig" src="../assets/logo/bxl_instagram-alt.svg" alt="">
+              </a>
+              <a href="https://www.tiktok.com/@binusuniversityofficial?lang=en" class="sm" id="tiktok" target="_blank">
+                <img class="socmed" id="tik" src="../assets/logo/ic_baseline-tiktok.svg" alt="">
+              </a>
+            </div>
+            <div class="developer">
+              <p>Developed by Michelle Angela Aryanto</p>
+            </div>
+            <div class="copyright">
+              <p>Copyright © 2022 Sunbic. All rights reserved.<p>
+            </div>
+          </div>
+        </footer>
+        <!-- FOOTER ENDS HERE -->
+
+</body>
+</html>
